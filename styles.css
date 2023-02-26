@@ -1,59 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     overflow: hidden;
 
 }
 
-.backgroud{
-    background: linear-gradient(rgba(0,0,0,0.5) rgba(0,0,0,0.5));
+.backgroud {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
     background-image: url(1.jpg);
     background-size: cover;
+
     background-position: center;
     width: 100%;
     height: 100vh;
     background-color: grey;
-   
+
 }
 
-header{
+header {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
     align-items: center;
     text-align: center;
-   padding-top: 1rem;
+    padding-top: 1rem;
 
 }
 
-.cabecalho-link{
+.cabecalho-link {
     display: flex;
     gap: 3rem;
     font-weight: 300;
     cursor: pointer;
 }
 
-.cabecalho-link a{
+.cabecalho-link a {
     color: #fff;
     font-size: 12px;
 
 }
-.cabecalho-link a:hover{
+
+.cabecalho-link a:hover {
     color: #2ecc71;
     transition: 0.3s all;
 
 }
 
-.logo{
+.logo {
     height: 40px;
     width: 40px;
     background: transparent;
@@ -67,7 +69,7 @@ header{
     cursor: pointer;
 }
 
-button{
+button {
     color: #2ecc71;
     background: transparent;
     border: solid 1px #2ecc71;
@@ -79,48 +81,117 @@ button{
 
 }
 
-button:hover{
+button:hover {
     background-color: #2ecc71;
     color: #fff;
     transition: 0.5s;
 }
 
-.container-text{
-    padding: 150px 0 0 130px; 
+.container-text {
+    padding: 150px 0 0 130px;
 
 }
 
-.text h3{
+.text h3 {
     color: #fff;
     font-size: 15px;
 
 }
 
-.text h1{
+.text h1 {
     color: #fff;
     margin-top: 10px;
 
 }
 
-.text span{
+.text span {
     color: #2ecc71;
 }
 
-.text p{
+.text p {
     color: #fff;
     font-size: 12px;
     font-weight: 300;
     margin-top: 12px;
-   
+
 }
 
-.redes-sociais a{
+.redes-sociais a {
     color: #2ecc71;
     padding: 10px;
     margin-top: 5px;
 
 }
 
-.btn{
+.btn {
     margin-top: 10px;
+}
+
+/* Adicionando regras para telas menores que 600px */
+@media (max-width: 600px) {
+    .container-text {
+        padding: 100px 20px 0;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .cabecalho-link {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        margin-right: auto;
+        margin-left: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Adicionando regras para telas entre 600px e 1200px */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .container-text {
+        padding-left: 80px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .cabecalho-link {
+        gap: 2rem;
+    }
+}
+
+/* Adicionando regras para telas maiores que 1200px */
+@media (min-width: 1200px) {
+    .container-text {
+        padding-left: 130px;
+    }
+
+    .text h1 {
+        font-size: 70px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .cabecalho-link {
+        gap: 3rem;
+    }
 }
